@@ -17,9 +17,11 @@ print("Sounds great! Lets play...")
 
 while n < roundNum:
     compChoice = random.randrange(1,4)
-    playerChoice = str(input("Choose Rock (R), Paper (P), or Scissors (S): "))
-    while compChoice == 1:
+    playerChoice = str(input("\nChoose Rock (R), Paper (P), or Scissors (S): "))
+    if compChoice == 1:
+        
         print("Computer: Rock ")
+        
         if playerChoice == "r":
         
             print("Tie!... Try again")
@@ -37,8 +39,10 @@ while n < roundNum:
             print("invalid input")
             break
    
-    while compChoice == 2:
-                
+    elif compChoice == 2:
+       
+        print("Computer: Paper ")       
+       
         if playerChoice == "r":
         
            print("I win! Score:")
@@ -56,8 +60,10 @@ while n < roundNum:
             print("invalid input")
             break
     
-    while compchoice == 3:
-                
+    else:
+
+        print("Computer: Scissors ") 
+
         if playerChoice == "r":
            
             print("You win! Score:")
