@@ -16,8 +16,67 @@ roundNum = int(input("\nHow many rounds must a player win to win the match? "))
 print("Sounds great! Lets play...")
 
 while n < roundNum:
-    compChoice = random.randrange(1,3)
+    compChoice = random.randrange(1,4)
     playerChoice = str(input("Choose Rock (R), Paper (P), or Scissors (S): "))
-    print(compChoice)
+    while compChoice == 1:
+        print("Computer: Rock ")
+        if playerChoice == "r":
+        
+            print("Tie!... Try again")
+        
+        elif playerChoice == "p":
+        
+            print("You win! Score:")
+
+        elif playerChoice == "s":
+        
+            print("I win! Score:")
+
+        else:
+        
+            print("invalid input")
+            break
+   
+    while compChoice == 2:
+                
+        if playerChoice == "r":
+        
+           print("I win! Score:")
+
+        elif playerChoice == "p":
+        
+            print("Tie!... Try again")
+        
+        elif playerChoice == "s":
+
+            print("You win! Score:")
+
+        else:
+        
+            print("invalid input")
+            break
+    
+    while compchoice == 3:
+                
+        if playerChoice == "r":
+           
+            print("You win! Score:")
+        
+        elif playerChoice == "p":
+       
+            print("I win! Score:")
+       
+        elif playerChoice == "s":
+        
+            print("Tie!... Try again")
+
+        else:
+        
+            print("invalid input")
+            break
+
+    
+
+    
     n = n + 1
 
