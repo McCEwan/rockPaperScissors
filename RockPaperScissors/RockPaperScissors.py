@@ -29,15 +29,15 @@ while pPointTotal < roundNum and cPointTotal < roundNum:
         
         elif playerChoice == "p":
         
-            print("You win! Score:")
-
-            pPointTotal = pPointTotal + 1
+           pPointTotal = pPointTotal + 1
+           
+           print("You win! Score:" ,pPointTotal, ":", cPointTotal)
 
         elif playerChoice == "s":
         
-            print("I win! Score:")
-
             cPointTotal = cPointTotal + 1
+
+            print("I win! Score:", pPointTotal, ":" ,cPointTotal)
 
         else:
         
@@ -50,9 +50,9 @@ while pPointTotal < roundNum and cPointTotal < roundNum:
        
         if playerChoice == "r":
         
-           print("I win! Score:")
-
            cPointTotal = cPointTotal + 1
+           
+           print("I win! Score:" , pPointTotal, ":" ,cPointTotal)
 
         elif playerChoice == "p":
         
@@ -60,9 +60,9 @@ while pPointTotal < roundNum and cPointTotal < roundNum:
         
         elif playerChoice == "s":
 
-            print("You win! Score:")
-
             pPointTotal = pPointTotal + 1
+            
+            print("You win! Score:" , pPointTotal, ":" ,cPointTotal)
 
         else:
         
@@ -75,14 +75,16 @@ while pPointTotal < roundNum and cPointTotal < roundNum:
 
         if playerChoice == "r":
            
-            print("You win! Score:")
             pPointTotal = pPointTotal + 1
+            
+            print("You win! Score:"  ,pPointTotal, ":"  ,cPointTotal)
 
         elif playerChoice == "p":
        
-            print("I win! Score:")
             cPointTotal = cPointTotal + 1
-
+            
+            print("I win! Score:" , pPointTotal, ":"  ,cPointTotal)
+            
         elif playerChoice == "s":
         
             print("Tie!... Try again")
