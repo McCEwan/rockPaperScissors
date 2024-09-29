@@ -1,7 +1,8 @@
 
 import random
 
-n = 0
+pPointTotal = 0
+cPointTotal = 0
 
 print("================== ROCK PAPER SCISSORS ==================")
 
@@ -15,7 +16,7 @@ roundNum = int(input("\nHow many rounds must a player win to win the match? "))
 
 print("Sounds great! Lets play...")
 
-while n < roundNum:
+while pPointTotal < roundNum and cPointTotal < roundNum:
     compChoice = random.randrange(1,4)
     playerChoice = str(input("\nChoose Rock (R), Paper (P), or Scissors (S): "))
     if compChoice == 1:
@@ -30,9 +31,13 @@ while n < roundNum:
         
             print("You win! Score:")
 
+            pPointTotal = pPointTotal + 1
+
         elif playerChoice == "s":
         
             print("I win! Score:")
+
+            cPointTotal = cPointTotal + 1
 
         else:
         
@@ -47,6 +52,8 @@ while n < roundNum:
         
            print("I win! Score:")
 
+           cPointTotal = cPointTotal + 1
+
         elif playerChoice == "p":
         
             print("Tie!... Try again")
@@ -54,6 +61,8 @@ while n < roundNum:
         elif playerChoice == "s":
 
             print("You win! Score:")
+
+            pPointTotal = pPointTotal + 1
 
         else:
         
@@ -67,11 +76,13 @@ while n < roundNum:
         if playerChoice == "r":
            
             print("You win! Score:")
-        
+            pPointTotal = pPointTotal + 1
+
         elif playerChoice == "p":
        
             print("I win! Score:")
-       
+            cPointTotal = cPointTotal + 1
+
         elif playerChoice == "s":
         
             print("Tie!... Try again")
@@ -81,8 +92,5 @@ while n < roundNum:
             print("invalid input")
             break
 
-    
 
-    
-    n = n + 1
 
