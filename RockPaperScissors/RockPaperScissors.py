@@ -49,6 +49,12 @@ def main():
                                 cPointTotal = cPointTotal + 1
 
                                 print("I win! Score:", pPointTotal, ":" ,cPointTotal)
+                            
+                            elif playerChoice == "quit":
+                            
+                                print("Exiting...")
+
+                                exit()
 
                             else:
                             
@@ -74,6 +80,12 @@ def main():
                                 pPointTotal = pPointTotal + 1
                                 
                                 print("You win! Score:" , pPointTotal, ":" ,cPointTotal)
+                            
+                            elif playerChoice == "quit":
+                            
+                                print("Exiting...")
+
+                                exit()
 
                             else:
                             
@@ -98,7 +110,13 @@ def main():
                             elif playerChoice == "s":
                             
                                 print("Tie!... Try again")
+                            
+                            elif playerChoice == "quit":
+                            
+                                print("Exiting...")
 
+                                exit()
+                           
                             else:
                             
                                 print("Not sure what you mean. Try again...")
@@ -140,6 +158,12 @@ def main():
 
                                 print("I win! Score:", pPointTotal, ":" ,cPointTotal)
 
+                            elif playerChoice == "quit":
+                            
+                                print("Exiting...")
+
+                                exit()
+
                             else:
                             
                                 print("Not sure what you mean. Try again...")
@@ -165,6 +189,12 @@ def main():
                                 
                                 print("You win! Score:" , pPointTotal, ":" ,cPointTotal)
 
+                            elif playerChoice == "quit":
+                            
+                                print("Exiting...")
+
+                                exit()
+
                             else:
                             
                                 print("Not sure what you mean. Try again...")
@@ -188,6 +218,12 @@ def main():
                             elif playerChoice == "s":
                             
                                 print("Tie!... Try again")
+
+                            elif playerChoice == "quit":
+                            
+                                print("Exiting...")
+
+                                exit()
 
                             else:
                             
