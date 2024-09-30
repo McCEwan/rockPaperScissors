@@ -16,12 +16,12 @@ def main():
     cPointTotal = 0
     
     mainLoop = True 
-    
-    roundNum = int(input("\nHow many rounds must a player win to win the match? "))
 
     while mainLoop == True:
 
-        if roundNum > 1:
+        roundNum = int(input("\nHow many rounds must a player win to win the match? "))
+
+        if roundNum >= 1:
                 print("Sounds great! Lets play...")
 
                 while pPointTotal < roundNum and cPointTotal < roundNum:
@@ -231,3 +231,4 @@ def main():
 
 if __name__ == "__main__":
     main()              
+
