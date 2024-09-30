@@ -15,7 +15,7 @@ print("Scissors beats paper, paper beats rock, rock beats scissors.")
    
 roundNum = int(input("\nHow many rounds must a player win to win the match? "))
 
-if roundNum < 1:
+while roundNum > 1:
     print("Sounds great! Lets play...")
 
     while pPointTotal < roundNum and cPointTotal < roundNum:
@@ -98,8 +98,10 @@ if roundNum < 1:
                     print("Not sure what you mean. Try again...")
     
 
-else:
-                
+while roundNum < 1:
+
+    print("\n================== Please enter a whole number equal to or greater than 1 ==================")
+
     roundNum = int(input("\nHow many rounds must a player win to win the match? "))
 
 
