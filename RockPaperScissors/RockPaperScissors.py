@@ -28,13 +28,13 @@ def main():
                         
                         compChoice = random.randrange(1,4)
                         
-                        playerChoice = str(input("\nChoose Rock (R), Paper (P), or Scissors (S): "))
+                        playerChoice = str.upper(input("\nChoose Rock (R), Paper (P), or Scissors (S): "))
                         
                         if compChoice == 1:
                             
                             print("Computer: Rock ")
                             
-                            if playerChoice == "r":
+                            if playerChoice == "R":
                             
                                 print("Tie!... Try again")
                             
@@ -44,13 +44,13 @@ def main():
                             
                                 print("You win! Score:" ,pPointTotal, ":", cPointTotal)
 
-                            elif playerChoice == "s":
+                            elif playerChoice == "S":
                             
                                 cPointTotal = cPointTotal + 1
 
                                 print("I win! Score:", pPointTotal, ":" ,cPointTotal)
                             
-                            elif playerChoice == "quit":
+                            elif playerChoice == "QUIT":
                             
                                 print("Exiting...")
 
@@ -65,23 +65,23 @@ def main():
                         
                             print("Computer: Paper ")       
                         
-                            if playerChoice == "r":
+                            if playerChoice == "R":
                             
                                 cPointTotal = cPointTotal + 1
                             
                                 print("I win! Score:" , pPointTotal, ":" ,cPointTotal)
 
-                            elif playerChoice == "p":
+                            elif playerChoice == "P":
                             
                                 print("Tie!... Try again")
                             
-                            elif playerChoice == "s":
+                            elif playerChoice == "S":
 
                                 pPointTotal = pPointTotal + 1
                                 
                                 print("You win! Score:" , pPointTotal, ":" ,cPointTotal)
                             
-                            elif playerChoice == "quit":
+                            elif playerChoice == "QUIT":
                             
                                 print("Exiting...")
 
@@ -95,23 +95,23 @@ def main():
 
                             print("Computer: Scissors ") 
 
-                            if playerChoice == "r":
+                            if playerChoice == "R":
                             
                                 pPointTotal = pPointTotal + 1
                                 
                                 print("You win! Score:"  ,pPointTotal, ":"  ,cPointTotal)
 
-                            elif playerChoice == "p":
+                            elif playerChoice == "P":
                         
                                 cPointTotal = cPointTotal + 1
                                 
                                 print("I win! Score:" , pPointTotal, ":"  ,cPointTotal)
                                 
-                            elif playerChoice == "s":
+                            elif playerChoice == "S":
                             
                                 print("Tie!... Try again")
                             
-                            elif playerChoice == "quit":
+                            elif playerChoice == "QUIT":
                             
                                 print("Exiting...")
 
@@ -136,29 +136,29 @@ def main():
                         
                         compChoice = random.randrange(1,4)
                         
-                        playerChoice = str(input("\nChoose Rock (R), Paper (P), or Scissors (S): "))
+                        playerChoice = str.upper(input("\nChoose Rock (R), Paper (P), or Scissors (S): "))
                         
                         if compChoice == 1:
                             
                             print("Computer: Rock ")
                             
-                            if playerChoice == "r":
+                            if playerChoice == "R":
                             
                                 print("Tie!... Try again")
                             
-                            elif playerChoice == "p":
+                            elif playerChoice == "P":
                             
                                 pPointTotal = pPointTotal + 1
                             
                                 print("You win! Score:" ,pPointTotal, ":", cPointTotal)
 
-                            elif playerChoice == "s":
+                            elif playerChoice == "S":
                             
                                 cPointTotal = cPointTotal + 1
 
                                 print("I win! Score:", pPointTotal, ":" ,cPointTotal)
 
-                            elif playerChoice == "quit":
+                            elif playerChoice == "QUIT":
                             
                                 print("Exiting...")
 
@@ -173,23 +173,23 @@ def main():
                         
                             print("Computer: Paper ")       
                         
-                            if playerChoice == "r":
+                            if playerChoice == "R":
                             
                                 cPointTotal = cPointTotal + 1
                             
                                 print("I win! Score:" , pPointTotal, ":" ,cPointTotal)
 
-                            elif playerChoice == "p":
+                            elif playerChoice == "P":
                             
                                 print("Tie!... Try again")
                             
-                            elif playerChoice == "s":
+                            elif playerChoice == "S":
 
                                 pPointTotal = pPointTotal + 1
                                 
                                 print("You win! Score:" , pPointTotal, ":" ,cPointTotal)
 
-                            elif playerChoice == "quit":
+                            elif playerChoice == "QUIT":
                             
                                 print("Exiting...")
 
@@ -203,23 +203,23 @@ def main():
 
                             print("Computer: Scissors ") 
 
-                            if playerChoice == "r":
+                            if playerChoice == "R":
                             
                                 pPointTotal = pPointTotal + 1
                                 
                                 print("You win! Score:"  ,pPointTotal, ":"  ,cPointTotal)
 
-                            elif playerChoice == "p":
+                            elif playerChoice == "P":
                         
                                 cPointTotal = cPointTotal + 1
                                 
                                 print("I win! Score:" , pPointTotal, ":"  ,cPointTotal)
                                 
-                            elif playerChoice == "s":
+                            elif playerChoice == "S":
                             
                                 print("Tie!... Try again")
 
-                            elif playerChoice == "quit":
+                            elif playerChoice == "QUIT":
                             
                                 print("Exiting...")
 
